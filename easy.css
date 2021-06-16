@@ -1,0 +1,559 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.header
+{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(54, 125, 255, 0.3), rgba(3, 95, 3, 0.4)), url(porter-raab-Ucr4Yp-t364-unsplash.jpg) ;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav
+ {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+.nav-links ul
+{
+    display: inline-flex;
+    padding: 40px 30px;
+}
+.nav-links ul li
+{
+    text-transform: uppercase;
+     list-style: none;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 4px;
+    margin: auto;
+    display: block;
+    background: rgb(25, 220, 255);
+    transition: 1.5s;
+}
+
+.nav-links ul li:hover:after
+{
+   width: 100%;
+}
+.nav-links ul li a
+{
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    padding: 20px 20px;
+    color: rgb(255, 68, 0);
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.nav-links ul li a:hover
+{
+    color: white;
+}
+
+.logo
+{
+    padding: 20px 40px;
+    text-align: center;
+}
+.icon
+{
+    text-align: center;
+    padding: 10px 20px;
+    color: rgb(255, 30, 30);
+    transition: .9s;
+}
+.icon:hover
+{
+    transform: rotate(360deg);
+    color: rgb(47, 61, 255);
+}
+.logo a
+{
+
+   font-size: 2rem;
+   list-style: none;
+   text-decoration: none;
+}
+.logo h1
+{
+    color:rgb(255, 255, 255);
+    font-size: 2rem;
+}
+.text-box
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 90%;
+}
+.text-box p
+{
+    color: white;
+   padding: 10px 10px;
+   font-size: 1.2rem;
+}
+.text-box h1
+{
+    color: white;
+    display: inline-flex;
+    font-size: 3.8rem;
+    padding: 10px 10px;
+}
+.text-box
+{
+   display: inline-block;
+}
+.text-box .btn
+{
+    text-decoration: none;
+    background : transparent;
+    color: white;
+    border: 1px solid rgb(126, 247, 146);
+    padding: 10px 10px;
+    font-size: 1.3rem;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;     
+    transition: 1.3s;
+}
+.text-box .btn:hover
+{
+    border: 1px solid rgb(145, 144, 144);
+    background-color: coral;
+    color: black;
+    font-weight: bolder;
+}
+
+.nav-links i{
+    display: none;
+}
+ 
+.ibar i
+{
+    display: none;
+}
+@media(max-width: 700px) {
+
+    .nav-links i
+{
+    display: block;
+}
+
+    .text-box h1
+    {
+        color: white;
+        display: inline-flex;
+        font-size: 2.3rem;
+        padding: 10px 10px;
+    }
+    .nav-links ul{
+        display: block;
+    }
+  .nav-links
+  {
+     background: #1e2522; 
+     position: absolute;
+     right: -170px;
+     top: 0;
+     height: 100vh;
+     width: 170px;
+     z-index: 1;
+     text-align: left;
+     transition: 1s;
+    }
+    .nav-links ul li{
+         margin-top: 20px;
+         cursor: pointer;
+    }
+
+    .nav-links i
+    {
+        color: rgb(47, 253, 226);
+        font-size: 2rem;
+        padding: 5px 5px;
+    }
+
+     .ibar i
+    {
+        display: block;
+        margin-right: 20px;
+        font-size: 1.5rem;
+        color: rgb(255, 255, 255);
+    }
+
+}
+
+
+/* Course Section Starts from here */
+
+.course
+{
+    text-align: center;
+    margin-top: 50px;    
+}
+.course-level
+{
+    margin-top: 30px;
+    display: flex;
+
+    text-align: center;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+.row
+{
+    flex-basis: 31%;
+    background-color: rgb(242, 252, 152);
+    padding: 10px 10px;
+    box-sizing: border-box;
+    transition: .5s;
+    margin: 20px;
+}
+.row:hover
+{
+    box-shadow: 3px 3px 3px 3px rgb(0, 87, 94);
+}
+.course h2
+{
+    text-transform: uppercase;
+}
+.course p
+{
+    font-size: 1.1rem;
+}
+
+.row h1
+{
+    font-weight: bolder;
+}
+.row p
+{
+    font-size: 1.1rem;
+}
+
+@media (max-width: 700px) {
+
+    .course-level{
+        flex-direction: column;
+    }
+
+    .row{
+        margin-top: 10px;
+    }
+}
+
+
+/* Course Section Ends   here */ 
+
+/* <!-- campus Starts from Here --> */
+
+.campus
+{
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px 10px;
+    width: 95%;
+ } 
+ .campus h2
+ {
+     text-transform: uppercase;
+ }
+ .campus-col
+ {
+    flex-basis: 30%;
+    position: relative;
+    overflow: hidden;
+}
+/* London, Briston, Manchester Bubble Up Code Start From here */
+.layer{
+    position: absolute;
+    background-color: rgba(20, 247, 255, 0.1);
+    height: 99%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+}
+
+.layer h3
+{
+   color: rgb(255, 255, 255);
+   font-size: 1.5rem;
+   bottom: 0;
+   left: 50%;
+   transform: translateX(-50%);
+   position: absolute;
+   width: 100%;
+   opacity: 0;
+   transition: 1s;
+}
+.layer:hover h3{
+    bottom: 50%;
+    opacity: 1;
+}
+.campus-col img
+{
+    height: 400px;
+    width: 100%;
+    border-radius: 10px;
+}
+/* London, Briston, Manchester Bubble Up Code Ends here */
+
+@media (max-width: 700px) {
+  
+    .campus-div
+       {
+           flex-direction: column;
+           width: 100%;
+       }
+    .campus-col
+       {
+           width: 100%;
+           margin: 20px;
+       }
+}   
+
+.campus-div
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+    align-items: center;
+}
+
+/* <!-- campus Ends Here --> */
+
+/* facility Starts from here */
+
+.facilityheader
+{
+   text-align: center;
+   padding: 10px;
+   margin-bottom: 5px;
+}
+.facilityheader h1
+{
+    text-transform: uppercase;
+}
+.facility-div
+{
+  display: flex;
+  flex-basis: 32%;
+  width: 100%;
+  padding: 10px 5px;
+  align-items: center;
+  justify-content: space-between;
+}
+.facilities-col
+{
+    width: 100%;
+    text-align: center;
+    padding: 20px 45px;
+}
+.facilities-col h3,p
+{
+    margin-top: 10px;
+}
+
+.facilities-col img
+{
+    width: 100%;
+    border-radius: 10px;
+}
+
+@media (max-width: 700px) {
+  
+ .facility-div
+    {
+        flex-direction: column;
+        width: 100%;
+    }
+ .facilities-col
+    {
+        width: 100%;
+    }
+
+ .facilities-col img
+    {
+       height: 200px;
+       width: 99%;
+    }
+}
+
+/* facility Ends Here */
+
+
+/* <!-- Testimonial Starts From Here --> */
+
+.testimonial-div
+{
+    margin: 20px;
+}
+
+.testimonial
+{
+    text-align: center;
+    margin: 10px;
+    padding: 10px 10px;
+}
+.testimonial h1
+{
+    text-transform: uppercase;
+}
+
+.testimonial-col img
+{
+    height: 70px;
+    border-radius: 50%;
+    padding: 2px 10px;
+    margin: 10px;
+}
+.testimonial-col
+{
+    padding: 0 10px;
+    background-color: rgb(255, 228, 193);
+    margin: 10px;
+    display: flex;
+    cursor: pointer;
+    flex-basis: 45%;
+}
+.testimonial-text
+{
+    padding: 20px 10px;
+}
+.testimonial-text h3
+{
+   text-align: center;
+   margin: 5px;
+}
+.star
+{
+    padding: 10px;
+    color: rgb(255, 82, 29);
+    text-align: right;
+}
+ @media (max-width: 700px) 
+ {
+    .testimonial-div
+        {
+            margin: 0px 0px;
+        }
+ }
+
+
+ /* <!-- Testimonial Ends Here --> */
+
+
+ /* Contact Starts From Here */
+
+.enroll-btn
+{
+    height: 40vh;
+    width: 95%;
+    text-align: center;
+    background-image:  url("1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0 auto;
+    position: relative;
+    padding: 0px 10px;
+    border-radius: 20px;
+}
+.enrolltext
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+}
+.hero-btn
+{
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 20px;
+    border: 1px solid rgb(255, 0, 0);
+    padding: 10px 5px;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    font-weight: bolder;
+    background-color: transparent;
+    transition: 1s;
+}
+.hero-btn:hover
+{
+    background-color: orangered;
+    border: none;
+    color: rgb(255, 255, 255);
+}
+
+.enrolltext h2
+{
+    margin: 10px;
+    padding: 10px 10px;
+    color: rgb(0, 0, 0);
+}
+
+@media (max-width: 700px) 
+{
+.enrolltext h2
+    {
+        color: rgb(255, 0, 0);
+    }
+}
+
+ /* Contact Ends Here */
+
+ <!-- /* Footer Starts From Here */ -->
+
+ .footer{
+     width: 90%;
+     padding: 10px;
+     margin: 10px;
+ }
+
+ .footer-text
+ {
+     text-align: center;
+     padding: 10px;
+ }
+ .footer-text h2
+ {
+     text-transform: uppercase;
+     padding: 10px;
+ }
+
+.socialmedia
+{
+    text-align: center;
+    padding: 10px 10px;
+    color: rgb(121, 4, 4);
+    font-size: 1.6rem;
+}
+.socialmedia i{
+    padding: 10px;
+    cursor: pointer;
+}
+.footerbottom
+{
+    text-align: center;
+    font-weight: bolder;
+}
+.footerbottom i{
+    color: rgb(255, 0, 0);
+    font-size: 1.4rem;
+    font-weight: bolder;
+}
+
+ <!-- /* Footer Ends From Here */ -->
